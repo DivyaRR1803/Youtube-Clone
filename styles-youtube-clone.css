@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    font-family: arial;
+    border: border-box ;
+}
+
+.navbar{
+    height: 50px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items:center;
+    
+}
+
+.nav-logo{
+    height: 40px;
+    width: 40px;
+}
+
+.logo{
+    background-image: url("you-icon.png");
+    background-size: cover;
+    height: 100%;
+    width: 175%;
+    margin-left: 25px;
+    border-radius: 10%;
+}
+
+.border{
+    border: 3px solid transparent;
+}
+.border:hover{
+border: 2px solid white;
+}
+
+.selec-icon{
+    display: flex;
+    margin-left: 1rem;
+}
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: badically used fpr spacing thongs evenly */
+    background-color: #222f3d;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 20%;
+    border-radius: 4px;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    /* justifu-content isrd for aligning it horizontally in center */
+    align-items: center;
+    /* align-itemss used to align it in vertically center */
+    font-size: 1.2rem;
+    background-color: #222f3d;
+    border-radius: 6px;
+}
+
+.micro-icon{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #222f3d;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.video-icon{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #222f3d;
+    border-radius: 50%;
+    margin-left: 30%;
+}
+
+.bell-icon{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #222f3d;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.user-icon{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #222f3d;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.tags{
+    background-color: black;
+    display: flex;
+    padding: 10px 20px;
+    justify-content:space-evenly; 
+    gap: 2px;
+    color: white;
+}
+
+.tag{
+    background-color:#000;
+    color: #f1f1ff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-left: 14.8%;
+}
+.tag:hover{
+    background-color:#222f3d;
+}
+
+.side-bar{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    min-width: 250px;
+    width: 50px;
+    height: 100%;
+    background: black;
+    color: white;
+    border-right: 2px solid white; /* Add this line to create a vertical border */
+}
+.side-content-prim, .side-content-sec, .side-content-third{
+    display: flex;
+    align-items: center;
+    /* Remove justify-content and height properties to align items vertically */
+    /* height: 40px; */
+    width: 90%;
+    margin: 0;
+    /* Add padding to the left side of the icons to move them to the left */
+    padding-left: 10px;
+    border: 2px solid black;
+    height: 50px;
+    border-radius: 10px;
+}
+.side-content-prim:hover, .side-content-sec:hover, .side-content-third:hover{
+    background-color: #222f3d;
+}
+
+.prim, .sec, .third{
+    /* Remove margin-left property to keep the text in place */
+    /* margin-left: 50px; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.divider {
+    width: 90%;
+    height: 1px;
+    background-color:#31223d;
+    margin: 10px 0;
+}
+
+
+.side-content2-prim, .side-content2-sec,.side-content2-third{
+    display: flex;
+    align-items: center;
+    /* Remove justify-content and height properties to align items vertically */
+    /* height: 40px; */
+    width: 90%;
+    margin: 0;
+    /* Add padding to the left side of the icons to move them to the left */
+    padding-left: 10px;
+    border: 2px solid black;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.side-content2 {
+    margin-top: 10px; /* Add some margin to separate the two sections */
+}
+
+.side-content2-prim:hover, .side-content2-sec:hover,.side-content2-third:hover{
+    background-color:#222f3d;
+}
+
+.prim, .sec,.third{
+    /* Remove margin-left property to keep the text in place */
+    /* margin-left: 50px; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+/* Body Section */
+
+body{
+    background-color: #000;
+}
+
+.video-container{
+    width: calc(100% - 250px);
+    margin-top: 40px;
+    margin-left: 250px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allows videos to wrap to the next row */
+    justify-content: space-evenly; /* Distributes videos evenly across the row */
+    gap:5px;
+    
+}
+
+
+.video{
+    width: calc((100% - 45px) / 3);
+    min-height: 250px;
+    height: auto;
+}
+
+.thumbnail{
+    width: 80%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.videio:hover{
+        background-color: #222f3d;
+        border-radius: 6px;
+}
+
+.video-thumbnail:hover{
+    background-color: #222f3d;
+    border-radius: 6px;
+}
+
+.video-content{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.channel-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+
+}
+
+.info {
+    display: flex; /* Display the title and channel-name in a row */
+    flex-direction: column; /* Stack the title and channel-name vertically */
+    flex-grow: 1;
+}
+
+.title{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    color:#979797 ;
+    text-overflow: ellipsis;
+   
+    margin-top: 1.5rem;
+    
+    
+}
+
+.channel-name{
+    font-size: 14px;
+    margin:0.1rem;
+    color: #979797;
+    
+}
